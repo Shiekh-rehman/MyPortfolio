@@ -259,6 +259,50 @@ a {
   0% { right: -100%; }
   100% { right: 100%; }
 }
+
+
+.hover h4 {
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  font-weight: 500;
+  color: #C6D9EC;
+  transition: all ease 0.4s;
+  position: relative;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+.hover h4::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #156BC1;
+  left: 0;
+  bottom: -100%;
+  border-radius: 50%;
+  transition: all ease 0.6s;
+}
+
+.hover h4:hover::after {
+  bottom: 0;
+  border-radius: 0;
+}
+
+.hover h4 a {
+  color: #C6D9EC;
+  text-decoration: none;
+  position: relative;
+  z-index: 9;
+}
+
+.hover h4:hover a {
+  color: #C6D9EC;
+}
+
+
+
 @media (max-width: 991px) {
 .mb-hide{
   display: none;

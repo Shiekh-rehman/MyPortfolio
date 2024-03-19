@@ -311,7 +311,7 @@ a {
   padding: .3rem 0;
 }
 .t{
-  font-size: 2vw;
+  font-size: 12px;
 
 }
 .card{
@@ -320,4 +320,5 @@ a {
  .man {
     width: 10%;
   }
+ 
 }
